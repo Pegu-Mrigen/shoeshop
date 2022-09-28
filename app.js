@@ -135,12 +135,43 @@ close.addEventListener("click", () => {
 });
 
 function myFunction() {
-  location.replace("http://127.0.0.1/shoecommerce/index.html")
+  location.replace("http://127.0.0.1/shoecommerce/index.html");
 }
 
+const search = () => {
+  const searchbox = document.getElementById("search-item").value.toUpperCase();
+  const storeitems = document.getElementById("item-list");
+  // const inputData = document.getElementById("search-item");
+  const product = document.querySelectorAll(".product");
+  const pname = document.getElementsByTagName("h2");
+
+  for (var i = 0; i < pname.length; i++) {
+    let match = product[i].getElementsByTagName("h2")[0];
+    if (match) {
+      let textvalue = match.textContent || match.innerHTML;
+
+      if (textvalue.toUpperCase().indexOf(searchbox) > -1) {
+        product[i].style.display = "";
+      } else {
+        product[i].style.display = "none";
+      }
+    }
+    storeitems.style.display = "block";
+  }
+};
+const searchOff = () => {
+  const searchbox = document.getElementById("search-item");
+
+  const storeitems = document.getElementById("item-list");
+  storeitems.style.display = "none";
+  searchbox.value = "";
+};
+// const removeInput = () => {
+//   inputData.innerHTML = "";
+// };
 
 // const priceToDisplay = document.getElementsByClassName(".productPrice").value;
 // const priceInput = document.getElementById("priceInput").value;
 // const submitPrice = ()=>{
 //   priceInput == priceToDisplay;
-// }  
+// }
