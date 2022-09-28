@@ -128,8 +128,19 @@ const payment = document.querySelector(".payment");
 const close = document.querySelector(".close");
 
 productButton.addEventListener("click", () => {
-  payment.style.display = "flex";
+  payment.style.display = "";
 });
 close.addEventListener("click", () => {
   payment.style.display = "none";
 });
+
+function myFunction() {
+  location.replace("http://127.0.0.1/shoecommerce/index.html")
+}
+
+
+// const priceToDisplay = document.getElementsByClassName(".productPrice").value;
+// const priceInput = document.getElementById("priceInput").value;
+// const submitPrice = ()=>{
+//   priceInput == priceToDisplay;
+// }  
