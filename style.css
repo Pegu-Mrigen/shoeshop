@@ -29,7 +29,7 @@ body {
   display: none;
 }
 .container form {
-  width: 100%;
+  /* width: 100%; */
   /* border: 1px solid gray; */
   border-radius: 2px;
   display: flex;
@@ -41,24 +41,30 @@ body {
   border: none;
   outline: none;
   box-shadow: none;
-  width: 100%;
+  /* width: 100%; */
   font-size: 16px;
   font-weight: 600;
   padding: 10px 10px;
+  border-radius: 5px;
 }
 .container form i {
   padding-right: 10px;
   color: aqua;
 }
 .item-list {
-  padding: 20px 0;
   display: none;
+  background: gray;
+  border-radius: 10px;
+
+  
 }
 .product {
   display: flex;
   align-items: center;
   cursor: pointer;
   padding: 15px;
+  border: 2px solid black;
+ border-radius: 5px;
 }
 .product img {
   width: 70px;
@@ -129,7 +135,7 @@ nav {
 }
 .sliderWrapper {
   display: flex;
-  width: 500vw;
+  width: 600vw;
   transition: all 1s ease-in-out;
 }
 .sliderItem {
@@ -167,11 +173,13 @@ nav {
   position: absolute;
   top: 10%;
   left: 10%;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 300;
   text-align: center;
   color: chocolate;
-  border: 1px solid chocolate;
+  border: 3px solid green;
+  background: ghostwhite;
+  padding: 15px;
   z-index: 1;
 }
 .buyButton {
@@ -185,10 +193,11 @@ nav {
   border: 1px solid chocolate;
   z-index: 1;
   background-color: black;
+  padding: 10px;
 }
 
 .sliderItem:nth-child(1) .sliderBg {
-  background-color: green;
+  background-color: purple;
 }
 .sliderItem:nth-child(2) .sliderBg {
   background-color: purple;
@@ -197,7 +206,7 @@ nav {
   background-color: orange;
 }
 .sliderItem:nth-child(4) .sliderBg {
-  background-color: pink;
+  background-color: blue;
 }
 .sliderItem:nth-child(5) .sliderBg {
   background-color: gold;
@@ -253,13 +262,13 @@ nav {
   width: 45%;
   height: 100px;
 }
-
-.product {
-  /* height: 100vh; */
+.products {
+  height: 100vh;
   background-color: whitesmoke;
   position: relative;
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 }
+
 .payment {
   height: 600px;
   width: 600px;
@@ -271,7 +280,7 @@ nav {
   right: 0;
   margin: auto;
   padding: 10px 40px;
-  display: none;
+  display: flex;
   flex-direction: column;
   -webkit-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.91);
   box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.91);
