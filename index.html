@@ -32,63 +32,63 @@
                             <img src="/img/R1.png" alt="">
                             <div class="p-details">
                                 <h2>Reebok shoes for everyone</h2>
-                                
+
                             </div>
                         </div>
                         <div class="product">
                             <img src="/img/O1.png" alt="">
                             <div class="p-details">
                                 <h2>Shoe for all of us</h2>
-                                
+
                             </div>
                         </div>
                         <div class="product">
                             <img src="/img/P1.png" alt="">
                             <div class="p-details">
                                 <h2>Puma for all heros</h2>
-                                
+
                             </div>
                         </div>
                         <div class="product">
                             <img src="/img/C1.png" alt="">
                             <div class="p-details">
                                 <h2>Shoe for all</h2>
-                               
+
                             </div>
                         </div>
                         <div class="product">
                             <img src="/img/A1.png" alt="">
                             <div class="p-details">
                                 <h2>Shoe for sportsperson</h2>
-                                
+
                             </div>
                         </div>
                         <div class="product">
                             <img src="/img/C1.png" alt="">
                             <div class="p-details">
                                 <h2>Campaus for everyone</h2>
-                                
+
                             </div>
                         </div>
                         <div class="product">
                             <img src="/img/A1.png" alt="">
                             <div class="p-details">
                                 <h2>Shoe for sportsman</h2>
-                                
+
                             </div>
                         </div>
                         <div class="product">
                             <img src="/img/C1.png" alt="">
                             <div class="p-details">
                                 <h2>Shoe for all people</h2>
-                                
+
                             </div>
                         </div>
                         <div class="product">
                             <img src="/img/A1.png" alt="">
                             <div class="p-details">
                                 <h2>Adidas for sportsperson</h2>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -138,7 +138,7 @@
                     <button class="buyButton">BUY NOW</button>
                 </a>
             </div>
-            <div class="sliderItem">                
+            <div class="sliderItem">
                 <img src="./img/R1.png" alt="" class="sliderImg">
                 <div class="sliderBg"></div>`
                 <h1 class="sliderTitle">NEW </br> ARRIVALS </br> REEBOK</h1>
@@ -192,7 +192,7 @@
     </div>
 
     <div class="products" id="product">
-        <img src="./img/C1.png" alt="" class="productImg">
+        <img src="./img/C1.png" alt="" class="p roductImg">
         <div class="productDetails">
             <h1 class="productTitle"></h1>
             <h2 class="productPrice">Rs.1500 only</h2>
@@ -204,32 +204,37 @@
                 <div class="color"></div>
                 <div class="color"></div>
             </div>
-            <div class="sizes">
+            <!-- <div class="sizes">
                 <div class="size">42</div>
                 <div class="size">43</div>
                 <div class="size">44</div>
-            </div>
+            </div> -->
             <button class="productButton">BUY NOW !</button>
         </div>
         <div class="payment">
             <h1 class="payTitle">Personal Information</h1>
             <form action="pay.php" method="post">
-                <label for="">Name and Surname</label>
+                <label for="fullname">Full Name</label>
                 <input type="text" placeholder="Your Name" class="payInput">
-                <label for="">Phone Number</label>
+                <label for="phonenumber">Phone Number</label>
                 <input type="text" placeholder="+91 1234567890" class="payInput">
-                <label for="">Address</label>
+                <label for="address">Address</label>
                 <input type="text" placeholder="Your Address" class="payInput">
-                <label for="color">Type the color you prefer:</label>
-                <input type="text" name="color" id="color" 
-                    placeholder="prefered color" class="colorInput">
-                    <label for="color">Type the size you prefer:</label>
-                    <input type="text" name="color" id="color" 
-                        placeholder="prefered size" class="sizeInput">
+                <label for="email">Email Address</label>
+                <input type="text" placeholder="Your Email" class="payInput">
+
+                <p>Choose the color you prefer:</p>
+                <label for="white"><br>
+                <input type="radio" value="WHITE" name="coloroption" id="coloroption" checked="white" class="colorInput">
+                <label for="black"></label>
+                <input type="radio" value="BLACK">
+                
+                
+                
+                <label for="size">Choose the size you prefer:</label>
+                <input type="dropdown" name="size" id="size" class="sizeInput">
                 <label for="price">Choose an advance amount between 2 and 10:</label>
-                <input type="range" name="price" id="price" min="2" max="10" step="2" value="3"
-                    placeholder="Advance amount" class="payInput">
-                <output class="price-output" for="price"></output>
+                <input type="dropdown" name="price" id="price" class="payInput">
                 <span class="close">X</span>
                 Name: <input type="text" name="customername">c
                 Email: <input type="text" name="email">
@@ -261,7 +266,7 @@
             <h1 class="nsTitle">New Season</h1>
             <h1 class="nsTitle">New Collection</h1>
             <a href="#nav">
-                <button class="nsButton">CHOOSE  YOUR  FAVORITE  ONE</button>
+                <button class="nsButton">CHOOSE YOUR FAVORITE ONE</button>
             </a>
         </div>
         <div class="nsItem">
@@ -297,7 +302,7 @@
                     <li class="fListItem">Nike</li>
                     <li class="fListItem">Adidas</li>
                     <li class="fListItem">Reebok</li>
-                    <li class="fListItem">Puma</li>                    
+                    <li class="fListItem">Puma</li>
                 </ul>
             </div>
         </div>

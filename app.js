@@ -25,11 +25,11 @@ const products = [
     price: "Rs. 3000 only",
     colors: [
       {
-        code: "white",
+        code: "blue",
         img: "./img/N1.png",
       },
       {
-        code: "black",
+        code: "white",
         img: "./img/N2.png",
       },
     ],
@@ -40,11 +40,11 @@ const products = [
     price: "Rs. 5000 only",
     colors: [
       {
-        code: "red",
+        code: "gray",
         img: "./img/A1.png",
       },
       {
-        code: "blue",
+        code: "white",
         img: "./img/A2.png",
       },
     ],
@@ -59,7 +59,7 @@ const products = [
         img: "./img/R1.png",
       },
       {
-        code: "red",
+        code: "gray",
         img: "./img/R2.png",
       },
     ],
@@ -70,11 +70,11 @@ const products = [
     price: "Rs. 3500 only",
     colors: [
       {
-        code: "yellow",
+        code: "blue",
         img: "./img/P1.png",
       },
       {
-        code: "pink",
+        code: "red",
         img: "./img/P2.png",
       },
     ],
@@ -85,13 +85,14 @@ const products = [
     price: "Rs. 1000 only",
     colors: [
       {
-        code: "gray",
+        code: "white",
         img: "./img/O1.png",
       },
       {
-        code: "purple",
+        code: "green",
         img: "./img/O2.png",
       },
+      
     ],
   },
 ];

@@ -292,6 +292,7 @@ nav {
 label {
   font-size: 14px;
   font-weight: 300;
+  display: flex;
 }
 .payInput {
   padding: 10px;
@@ -419,6 +420,9 @@ label {
   flex: 1;
   padding: 50px;
   text-align: center;
+}
+.galleryTitle{
+  margin: 20px;
 }
 .galleryImg {
   width: 100%;
