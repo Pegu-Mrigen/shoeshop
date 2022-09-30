@@ -55,8 +55,6 @@ body {
   display: none;
   background: gray;
   border-radius: 10px;
-
-  
 }
 .product {
   display: flex;
@@ -64,7 +62,7 @@ body {
   cursor: pointer;
   padding: 15px;
   border: 2px solid black;
- border-radius: 5px;
+  border-radius: 5px;
 }
 .product img {
   width: 70px;
@@ -82,7 +80,6 @@ body {
 .product .p-details h3 {
   font-size: 18px;
 }
-
 
 nav {
   background-color: black;
@@ -113,6 +110,7 @@ nav {
   font-size: 20px;
   border-bottom: 3px solid yellow;
   cursor: pointer;
+  color: greenyellow;
 }
 .navBottom {
   display: flex;
@@ -125,7 +123,7 @@ nav {
   font-weight: 400;
   cursor: pointer;
 }
-.navItem a{
+.navItem a {
   text-decoration: none;
 }
 .slider {
@@ -200,7 +198,7 @@ nav {
   background-color: purple;
 }
 .sliderItem:nth-child(2) .sliderBg {
-  background-color: purple;
+  background-color: green;
 }
 .sliderItem:nth-child(3) .sliderBg {
   background-color: orange;
@@ -215,16 +213,16 @@ nav {
   background-color: red;
 }
 .sliderItem:nth-child(1) .sliderPrice {
-  color: green;
+  color: purple;
 }
 .sliderItem:nth-child(2) .sliderPrice {
-  color: purple;
+  color: green;
 }
 .sliderItem:nth-child(3) .sliderPrice {
   color: orange;
 }
 .sliderItem:nth-child(4) .sliderPrice {
-  color: pink;
+  color: blue;
 }
 .sliderItem:nth-child(5) .sliderPrice {
   color: gold;
@@ -284,6 +282,7 @@ nav {
   flex-direction: column;
   -webkit-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.91);
   box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.91);
+  display: none;
 }
 .payTitle {
   font-size: 20px;
@@ -362,8 +361,9 @@ label {
   font-weight: 900;
 }
 .productDesc {
-  font-size: 24px;
+  font-size: 25px;
   color: gray;
+  padding: 30px;
 }
 .colors,
 .sizes {
@@ -374,12 +374,13 @@ label {
   width: 32px;
   height: 32px;
   border-radius: 5px;
-  background-color: black;
+  background-color: blue;
   margin-right: 10px;
   cursor: pointer;
+  border: 3px solid black;
 }
 .color:last-child {
-  background-color: blue;
+  background-color: black;
 }
 .size {
   padding: 5px 20px;
@@ -403,10 +404,10 @@ label {
   color: black;
 }
 
-.payInput{
+.payInput {
   transition: all 1s ease-in-out;
 }
-.price-output{
+.price-output {
   transition: all 1s ease-in-out;
 }
 
@@ -417,17 +418,19 @@ label {
 .galleryItem {
   flex: 1;
   padding: 50px;
+  text-align: center;
 }
 .galleryImg {
   width: 100%;
   height: 500px;
+  border-radius: 20px;
 }
 .newSeason {
   display: flex;
 }
 .nsItem {
   flex: 1;
-  background-color: black;
+  background-color: green;
   color: white;
   display: flex;
   flex-direction: column;
@@ -438,14 +441,17 @@ label {
 .nsImg {
   width: 100%;
   height: 500px;
+  object-fit: ;
 }
 .nsTitle {
   font-size: 40px;
+  padding: 20px;
 }
 .nsButton {
   padding: 15px;
   font-weight: 600;
   cursor: pointer;
+  margin: 20px;
 }
 footer {
   display: flex;
@@ -453,11 +459,12 @@ footer {
 .footerLeft {
   flex: 2;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 50px;
 }
 .fMenuTitle {
   font-size: 16px;
+  margin-bottom: 20px;
 }
 .fList {
   padding: 0;
@@ -468,6 +475,7 @@ footer {
   margin-bottom: 10px;
   color: gray;
   cursor: pointer;
+  
 }
 .footerRight {
   flex: 1;
@@ -487,6 +495,9 @@ footer {
 }
 .fIcons {
   display: flex;
+  height: 10px;
+  width: 10px;
+  cursor: pointer;
 }
 .fIcon {
   height: 20px;
@@ -498,7 +509,6 @@ footer {
   font-size: 14px;
 }
 
-
 /* form{
   background-color: black;
   color: white;
@@ -508,7 +518,7 @@ footer {
   nav {
     padding: 20px;
   }
-  
+
   .search {
     display: none;
   }

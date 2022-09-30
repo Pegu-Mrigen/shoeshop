@@ -6,76 +6,91 @@ const menuItems = document.querySelectorAll(".menuItem");
 const products = [
   {
     id: 1,
-    title: "TITLE_1",
-    price: 19,
+    title: "CAMPUS",
+    price: "Rs.1500 only",
     colors: [
       {
-        code: "black",
-        img: "./img/PP1.png",
+        code: "blue",
+        img: "./img/C1.png",
       },
       {
-        code: "blue",
-        img: "./img/PP3.png",
+        code: "black",
+        img: "./img/C2.png",
       },
     ],
   },
   {
     id: 2,
-    title: "TITLE_2",
-    price: 19,
+    title: "NIKE",
+    price: "Rs. 3000 only",
     colors: [
       {
-        code: "red",
-        img: "./img/PP2.png",
+        code: "white",
+        img: "./img/N1.png",
       },
       {
-        code: "pink",
-        img: "./img/PP4.png",
+        code: "black",
+        img: "./img/N2.png",
       },
     ],
   },
   {
     id: 3,
-    title: "TITLE_3",
-    price: 19,
+    title: "ADIDAS",
+    price: "Rs. 5000 only",
     colors: [
       {
-        code: "green",
-        img: "./img/PP3.png",
+        code: "red",
+        img: "./img/A1.png",
       },
       {
-        code: "orange",
-        img: "./img/PP5.png",
+        code: "blue",
+        img: "./img/A2.png",
       },
     ],
   },
   {
     id: 4,
-    title: "TITLE_4",
-    price: 19,
+    title: "REEBOK",
+    price: "Rs. 4000 only",
     colors: [
       {
-        code: "gold",
-        img: "./img/PP2.png",
+        code: "black",
+        img: "./img/R1.png",
       },
       {
-        code: "silver",
-        img: "./img/PP1.png",
+        code: "red",
+        img: "./img/R2.png",
       },
     ],
   },
   {
     id: 5,
-    title: "TITLE_5",
-    price: 19,
+    title: "PUMA",
+    price: "Rs. 3500 only",
+    colors: [
+      {
+        code: "yellow",
+        img: "./img/P1.png",
+      },
+      {
+        code: "pink",
+        img: "./img/P2.png",
+      },
+    ],
+  },
+  {
+    id: 6,
+    title: "OTHER",
+    price: "Rs. 1000 only",
     colors: [
       {
         code: "gray",
-        img: "./img/PP3.png",
+        img: "./img/O1.png",
       },
       {
         code: "purple",
-        img: "./img/PP2.png",
+        img: "./img/O2.png",
       },
     ],
   },
@@ -96,7 +111,7 @@ menuItems.forEach((item, index) => {
     choosenProduct = products[index];
     //change texts of currentProduct
     currentProductTitle.textContent = choosenProduct.title;
-    currentProductPrice.textContent = "$" + choosenProduct.price;
+    currentProductPrice.textContent =  choosenProduct.price;
 
     currentProductImg.src = choosenProduct.colors[0].img;
     //asigning new colors
@@ -128,7 +143,7 @@ const payment = document.querySelector(".payment");
 const close = document.querySelector(".close");
 
 productButton.addEventListener("click", () => {
-  payment.style.display = "";
+  payment.style.display = "flex";
 });
 close.addEventListener("click", () => {
   payment.style.display = "none";
