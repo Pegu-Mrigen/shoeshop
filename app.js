@@ -182,12 +182,7 @@ const searchOff = () => {
   storeitems.style.display = "none";
   searchbox.value = "";
 };
-// const removeInput = () => {
-//   inputData.innerHTML = "";
-// };
 
-// const priceToDisplay = document.getElementsByClassName(".productPrice").value;
-// const priceInput = document.getElementById("priceInput").value;
-// const submitPrice = ()=>{
-//   priceInput == priceToDisplay;
-// }
+
+
+

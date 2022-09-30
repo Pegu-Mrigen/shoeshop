@@ -268,8 +268,8 @@ nav {
 }
 
 .payment {
-  height: 600px;
-  width: 600px;
+  /* height: 600px;
+  width: 600px; */
   background-color: white;
   position: absolute;
   top: 0;
@@ -277,12 +277,12 @@ nav {
   left: 0;
   right: 0;
   margin: auto;
-  padding: 10px 40px;
+  /* padding: 10px 40px; */
   display: flex;
   flex-direction: column;
   -webkit-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.91);
   box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.91);
-  display: none;
+  /* display: none; */
 }
 .payTitle {
   font-size: 20px;
@@ -294,7 +294,7 @@ label {
   font-weight: 300;
   display: flex;
 }
-.payInput {
+/* .payInput {
   padding: 10px;
   margin: 10px 0px;
   border: none;
@@ -302,23 +302,15 @@ label {
 }
 .payInput::placeholder {
   color: cadetblue;
-}
+} */
 
-.cardIcons {
-  display: flex;
-}
-.cardIcon {
-  margin-right: 10px;
-}
-.cardInfo {
-  display: flex;
-  justify-content: space-between;
-}
 
-.sm {
+
+
+/* .sm {
   width: 30%;
-}
-.payButton {
+} */
+/* .payButton {
   position: absolute;
 
   height: 40px;
@@ -331,7 +323,7 @@ label {
   color: white;
   cursor: pointer;
   border: none;
-}
+} */
 .close {
   width: 20px;
   height: 20px;
@@ -513,10 +505,11 @@ footer {
   font-size: 14px;
 }
 
-/* form{
-  background-color: black;
-  color: white;
-} */
+form{
+  /* background-color: black; */
+  /* color: white; */
+  margin-top: 90px;
+}
 
 @media screen and (max-width: 480px) {
   nav {

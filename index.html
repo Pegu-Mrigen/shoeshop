@@ -214,31 +214,45 @@
         <div class="payment">
             <h1 class="payTitle">Personal Information</h1>
             <form action="pay.php" method="post">
-                <label for="fullname">Full Name</label>
-                <input type="text" placeholder="Your Name" class="payInput">
-                <label for="phonenumber">Phone Number</label>
-                <input type="text" placeholder="+91 1234567890" class="payInput">
+                <span class="close">X</span>
+
+
                 <label for="address">Address</label>
                 <input type="text" placeholder="Your Address" class="payInput">
-                <label for="email">Email Address</label>
-                <input type="text" placeholder="Your Email" class="payInput">
+
 
                 <p>Choose the color you prefer:</p>
-                <label for="white"><br>
-                <input type="radio" value="WHITE" name="coloroption" id="coloroption" checked="white" class="colorInput">
+
+                <input type="radio" value="WHITE" name="coloroption" id="coloroption">
                 <label for="black"></label>
-                <input type="radio" value="BLACK">
-                
-                
-                
+                <input type="radio" value="BLACK" name="coloroption">
+                <label for="white"></label>
+                <input type="radio" value="WHITE" name="coloroption" id="coloroption">
+                <label for="black"></label>
+                <input type="radio" value="BLACK" name="coloroption">
+                <label for="white"></label>
+
+
+
                 <label for="size">Choose the size you prefer:</label>
-                <input type="dropdown" name="size" id="size" class="sizeInput">
-                <label for="price">Choose an advance amount between 2 and 10:</label>
-                <input type="dropdown" name="price" id="price" class="payInput">
-                <span class="close">X</span>
-                Name: <input type="text" name="customername">c
+
+                <input type="radio" value="WHITE" name="coloroption" id="white" >
+                <label for="white"></label>
+                <input type="radio" value="BLACK" name="coloroption" id="black" >
+                <label for="black"></label>
+                <input type="radio" value="GRAY" name="coloroption" id="gray" >
+                <label for="gray"></label>
+                <input type="radio" value="RED" name="coloroption" id="red" >
+                <label for="red"></label>
+
+                <label for="price">Advance amount:</label>
+                <input type="text" name="contactno" id="price" min="500">
+                
+
+                Full Name: <input type="text" name="customername">
                 Email: <input type="text" name="email">
                 Contact No.: <input type="text" name="contactno">
+
                 <input type="submit" name="submit" value="Checkout!" onsubmit="submitPrice()">
             </form>
         </div>
