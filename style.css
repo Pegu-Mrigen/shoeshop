@@ -13,7 +13,6 @@ body {
   box-sizing: border-box;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-
 .container {
   width: 275px;
   height: 75px;
@@ -38,7 +37,6 @@ body {
   position: absolute;
   top: 30px;
 }
-
 .container form input {
   border: none;
   outline: none;
@@ -49,7 +47,6 @@ body {
   padding: 10px 10px;
   border-radius: 5px;
 }
-
 .container form i {
   padding-right: 10px;
   color: aqua;
@@ -85,7 +82,6 @@ body {
 .product .p-details h3 {
   font-size: 18px;
 }
-
 nav {
   background-color: black;
   color: white;
@@ -96,7 +92,6 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-
 .search {
   display: flex;
   align-items: center;
@@ -161,7 +156,6 @@ nav {
   height: 700px;
   width: 700px;
 }
-
 .sliderTitle {
   position: absolute;
   top: 10%;
@@ -198,7 +192,6 @@ nav {
   background-color: black;
   padding: 10px;
 }
-
 .sliderItem:nth-child(1) .sliderBg {
   background-color: purple;
 }
@@ -235,26 +228,22 @@ nav {
 .sliderItem:nth-child(6) .sliderPrice {
   color: red;
 }
-
 .features {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 50px;
 }
-
 .feature {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-
 .featureImg {
   width: 50px;
   height: 50px;
 }
-
 .featureTitle {
   font-size: 20px;
   font-weight: 600;
@@ -271,7 +260,6 @@ nav {
   position: relative;
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 }
-
 .payment {
   height: 80vh;
   width: 80vh;
@@ -288,13 +276,11 @@ nav {
   display: none;
   border-radius: 20px;
 }
-
 .payTitle {
   font-size: 20px;
   color: gray;
   margin: 3vh;
 }
-
 label {
   font-size: 14px;
   font-weight: 300;
@@ -309,7 +295,6 @@ label {
 .payInput::placeholder {
   color: cadetblue;
 }
-
 /* .sm {
   width: 30%;
 } */
@@ -317,7 +302,6 @@ label {
   border-radius: 35px 0px 35px 0px;
   border: solid;
   position: absolute;
-
   height: 40px;
   bottom: -40px;
   width: 100%;
@@ -342,7 +326,6 @@ label {
   cursor: pointer;
   padding: 2px;
 }
-
 .productImg {
   width: 50%;
 }
@@ -353,7 +336,6 @@ label {
   width: 40%;
   padding: 50px;
 }
-
 .productTitle {
   font-size: 75px;
   font-weight: 900;
@@ -387,7 +369,6 @@ label {
   font-size: 20px;
   cursor: pointer;
 }
-
 .productButton {
   float: right;
   padding: 10px 20px;
@@ -396,19 +377,16 @@ label {
   font-weight: 600;
   cursor: pointer;
 }
-
 .productButton:hover {
   background-color: white;
   color: black;
 }
-
 .payInput {
   transition: all 1s ease-in-out;
 }
 .price-output {
   transition: all 1s ease-in-out;
 }
-
 .gallery {
   display: flex;
   padding: 50px;
@@ -471,7 +449,6 @@ footer {
   padding: 0;
   list-style: none;
 }
-
 .fListItem {
   margin-bottom: 10px;
   color: gray;
@@ -516,7 +493,6 @@ footer {
   border-radius: 10px 10px -35px 35px;
   height: 60vh;
 }
-
 .fullnameInput {
   display: flex;
   margin: 20px;
@@ -545,7 +521,6 @@ footer {
 .radioOption label {
   font-size: 10px;
 }
-
 .colorContainer {
   display: flex;
   margin: 20px;
@@ -554,7 +529,6 @@ footer {
   display: flex;
   margin: 20px;
 }
-
 /* .payment form p {
   margin-right: 20px;
 } */
@@ -602,12 +576,10 @@ section input {
   height: 60vh;
   margin-top: 80px;
 }
-
 @media screen and (max-width: 480px) {
   nav {
     padding: 20px;
   }
-
   .search {
     display: none;
   }
@@ -656,7 +628,7 @@ section input {
     flex-direction: column;
     align-items: center;
 
-    margin-bottom: 280px;
+    margin-bottom: 0px;
   }
   .productImg {
     width: 80%;
@@ -717,21 +689,19 @@ section input {
   .payment {
     border-radius: 10px;
   }
-
   .payment form {
     width: 70%;
     height: 65vh;
     font-size: 10px;
     padding: 5px;
     margin: 0px;
-    
+
     flex-direction: row;
     margin-top: 20px;
     align-items: center;
     justify-content: center;
   }
-  .payment label {
-  }
+  
   .payment input {
     width: 50%;
     align-items: center;
@@ -787,5 +757,16 @@ section input {
   .payment form {
     height: 60vh;
     top: 60px;
+  }
+
+  .products {
+    height: 20px;
+  }
+  .product {
+    /* clip-path: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center; */
+    margin-bottom: 0px;
   }
 }
