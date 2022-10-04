@@ -1,13 +1,14 @@
 <?php
 
 require('config.php');
+session_start();
 
 $conn = mysqli_connect($host, $username, $password, $dbname);
 if($conn){
    echo "db connted" ;
 };
 // exit;
-session_start();
+
 
 require('razorpay-php/Razorpay.php');
 use Razorpay\Api\Api;

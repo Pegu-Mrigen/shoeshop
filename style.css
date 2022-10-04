@@ -35,6 +35,8 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  position: absolute;
+  top: 30px;
 }
 
 .container form input {
@@ -47,6 +49,7 @@ body {
   padding: 10px 10px;
   border-radius: 5px;
 }
+
 .container form i {
   padding-right: 10px;
   color: aqua;
@@ -55,6 +58,8 @@ body {
   display: none;
   background: gray;
   border-radius: 10px;
+  position: relative;
+  top: 100px;
 }
 .product {
   display: flex;
@@ -268,8 +273,8 @@ nav {
 }
 
 .payment {
-  /* height: 600px;
-  width: 600px; */
+  height: 80vh;
+  width: 80vh;
   background-color: white;
   position: absolute;
   top: 0;
@@ -277,16 +282,16 @@ nav {
   left: 0;
   right: 0;
   margin: auto;
-  /* padding: 10px 40px; */
-  display: flex;
-  flex-direction: column;
+  padding: 10px 40px;    
   -webkit-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.91);
   box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.91);
-  /* display: none; */
+  display: none;
 }
+
 .payTitle {
   font-size: 20px;
   color: gray;
+  margin: 3vh;
 }
 
 label {
@@ -294,7 +299,7 @@ label {
   font-weight: 300;
   display: flex;
 }
-/* .payInput {
+.payInput {
   padding: 10px;
   margin: 10px 0px;
   border: none;
@@ -302,15 +307,12 @@ label {
 }
 .payInput::placeholder {
   color: cadetblue;
-} */
-
-
-
+}
 
 /* .sm {
   width: 30%;
 } */
-/* .payButton {
+.payButton {
   position: absolute;
 
   height: 40px;
@@ -323,15 +325,15 @@ label {
   color: white;
   cursor: pointer;
   border: none;
-} */
+}
 .close {
   width: 20px;
   height: 20px;
   position: absolute;
   background-color: gray;
   color: white;
-  top: 10px;
-  right: 10px;
+  top: -50px;
+  right: -40px;
   display: flex;
   justify-content: center;
   cursor: pointer;
@@ -413,7 +415,7 @@ label {
   padding: 50px;
   text-align: center;
 }
-.galleryTitle{
+.galleryTitle {
   margin: 20px;
 }
 .galleryImg {
@@ -471,7 +473,6 @@ footer {
   margin-bottom: 10px;
   color: gray;
   cursor: pointer;
-  
 }
 .footerRight {
   flex: 1;
@@ -505,10 +506,98 @@ footer {
   font-size: 14px;
 }
 
-form{
-  /* background-color: black; */
-  /* color: white; */
-  margin-top: 90px;
+.payment form {
+  background-color: grey;
+  color: white;
+  margin-top: 30px;
+  
+  height: 60vh;
+}
+
+.fullnameInput {
+  display: flex;
+  margin: 20px;
+}
+.contactInput {
+  display: flex;
+  margin: 20px;
+}
+.emailInput {
+  display: flex;
+  margin: 20px;
+}
+.addressInput {
+  display: flex;
+  margin: 20px;
+}
+.amountInput {
+  display: flex;
+  margin: 20px;
+}
+.radioOption {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  
+  
+}
+.radioOption label{
+  font-size: 10px;
+}
+
+.colorContainer {
+  display: flex;
+  margin: 20px;
+}
+.sizeContainer {
+  display: flex;
+  margin: 20px;
+}
+
+/* .payment form p {
+  margin-right: 20px;
+} */
+.radioOption input {
+  margin-right: 5px;
+}
+.radioOption label {
+  margin-right: 20px;
+}
+label {
+  width: 500px;
+  clear: right;
+  text-align: right;
+  padding-right: 40px;
+}
+input {
+  float: left;
+}
+.fullnameInput,
+.contactInput,
+.emailInput,
+.addressInput,
+.amountInput,
+input {
+  width: 350px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0px 10px;
+}
+section input {
+  width: 200px;
+}
+.payment{
+  display: flex;
+}
+
+.payment form{
+  position: absolute;
+  margin-left: 40px;
+  background: grey;
+  width: 60vh;
+  height: 60vh;
+  margin-top: 80px;
+  
 }
 
 @media screen and (max-width: 480px) {
@@ -601,9 +690,5 @@ form{
     width: 90%;
     align-items: center;
     background-color: white;
-  }
-  .payment {
-    width: 90%;
-    padding: 20px;
   }
 }

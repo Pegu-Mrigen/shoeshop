@@ -14,7 +14,7 @@ $api = new Api($keyId, $keySecret);
 // We create an razorpay order using orders api
 // Docs: https://docs.razorpay.com/docs/orders
 //
-$price = $_POST[''];
+$price = $_POST['price'];
 $_SESSION['price'] = $price;
 $customername = $_POST['customername'];
 $email = $_POST['email'];
@@ -54,16 +54,16 @@ if (isset($_GET['checkout']) and in_array($_GET['checkout'], ['automatic', 'manu
 $data = [
     "key"               => $keyId,
     "amount"            => $amount,
-    "name"              => "DJ Tiesto",
-    "description"       => "Tron Legacy",
-    "image"             => "https://s29.postimg.org/r6dj1g85z/daft_punk.jpg",
+    "name"              => "AC",
+    "description"       => "Appun Computers ",
+    "image"             => "img/logo.png",
     "prefill"           => [
-    "name"              => "Daft Punk",
-    "email"             => "customer@merchant.com",
-    "contact"           => "9999999999",
+    "name"              => $customername,
+    "email"             => $email,
+    "contact"           => $contactno,
     ],
     "notes"             => [
-    "address"           => "Hello World",
+    "address"           => "Gohpur",
     "merchant_order_id" => "12312321",
     ],
     "theme"             => [

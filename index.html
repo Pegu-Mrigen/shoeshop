@@ -29,63 +29,63 @@
                     </form>
                     <div class="item-list" id="item-list">
                         <div class="product">
-                            <img src="/img/R1.png" alt="">
+                            <img src="img/R1.png" alt="R1">
                             <div class="p-details">
                                 <h2>Reebok shoes for everyone</h2>
 
                             </div>
                         </div>
                         <div class="product">
-                            <img src="/img/O1.png" alt="">
+                            <img src="img/O1.png" alt="O1">
                             <div class="p-details">
                                 <h2>Shoe for all of us</h2>
 
                             </div>
                         </div>
                         <div class="product">
-                            <img src="/img/P1.png" alt="">
+                            <img src="img/P1.png" alt="">
                             <div class="p-details">
                                 <h2>Puma for all heros</h2>
 
                             </div>
                         </div>
                         <div class="product">
-                            <img src="/img/C1.png" alt="">
+                            <img src="img/C1.png" alt="">
                             <div class="p-details">
                                 <h2>Shoe for all</h2>
 
                             </div>
                         </div>
                         <div class="product">
-                            <img src="/img/A1.png" alt="">
+                            <img src="img/A1.png" alt="">
                             <div class="p-details">
                                 <h2>Shoe for sportsperson</h2>
 
                             </div>
                         </div>
                         <div class="product">
-                            <img src="/img/C1.png" alt="">
+                            <img src="img/C1.png" alt="">
                             <div class="p-details">
                                 <h2>Campaus for everyone</h2>
 
                             </div>
                         </div>
                         <div class="product">
-                            <img src="/img/A1.png" alt="">
+                            <img src="img/A1.png" alt="">
                             <div class="p-details">
                                 <h2>Shoe for sportsman</h2>
 
                             </div>
                         </div>
                         <div class="product">
-                            <img src="/img/C1.png" alt="">
+                            <img src="img/C1.png" alt="">
                             <div class="p-details">
                                 <h2>Shoe for all people</h2>
 
                             </div>
                         </div>
                         <div class="product">
-                            <img src="/img/A1.png" alt="">
+                            <img src="img/A1.png" alt="">
                             <div class="p-details">
                                 <h2>Adidas for sportsperson</h2>
 
@@ -204,56 +204,54 @@
                 <div class="color"></div>
                 <div class="color"></div>
             </div>
-            <!-- <div class="sizes">
-                <div class="size">42</div>
-                <div class="size">43</div>
-                <div class="size">44</div>
-            </div> -->
+            
             <button class="productButton">BUY NOW !</button>
         </div>
         <div class="payment">
-            <h1 class="payTitle">Personal Information</h1>
+            <h1 class="payTitle">Personal Information:</h1>
             <form action="pay.php" method="post">
+                <div class="fullnameInput">
+                    <p> Full Name:</p><input type="text" name="customername" required>
+                </div>
+                <div class="contactInput">
+                    <p> Contact No.:</p> <input type="number" name="contactno">
+                </div>
+                <div class="emailInput">
+                    <p> Email(if any): </p><input type="email" name="email">
+                </div>
+                <div class="addressInput">
+                    <p> Address:</p><input type="text" name="address" placeholder="Your Address">
+                </div>
+                <div class="amountInput">
+                    <p>Advance amount:</p><input type="number" name="price" id="price" >
+                    <!-- <input type="hidden" name="price" value = "1200" id="price" > -->
+                </div>
+                <div class="radioOption">
+                    <p>Choose the color you prefer:</p>
+                    <div class="colorContainer">
+                        <input type="radio" value="white" name="coloroption" id="coloroption" class="colorInput">
+                        <label for="white">WHITE</label>
+                        <input type="radio" value="black" name="coloroption" class="colorInput">
+                        <label for="black">BLACK</label>
+                        <input type="radio" value="red" name="coloroption" id="coloroption" class="colorInput">
+                        <label for="red">RED</label>
+                        <input type="radio" value="gray" name="coloroption" class="colorInput">
+                        <label for="gray">GRAY</label>
+                    </div>
+                    <p> Choose the size you prefer:</p>
+                    <div class="sizeContainer">
+                        <input type="radio" value="42" name="sizeoption" id="white" >
+                        <label for="white">42</label>
+                        <input type="radio" value="43" name="sizeoption" id="black">
+                        <label for="black">43</label>
+                        <input type="radio" value="44" name="sizeoption" id="gray">
+                        <label for="gray">44</label>
+                        <input type="radio" value="45" name="sizeoption" id="red">
+                        <label for="red">45</label>
+                    </div>
+                </div>
                 <span class="close">X</span>
-
-
-                <label for="address">Address</label>
-                <input type="text" placeholder="Your Address" class="payInput">
-
-
-                <p>Choose the color you prefer:</p>
-
-                <input type="radio" value="WHITE" name="coloroption" id="coloroption">
-                <label for="black"></label>
-                <input type="radio" value="BLACK" name="coloroption">
-                <label for="white"></label>
-                <input type="radio" value="WHITE" name="coloroption" id="coloroption">
-                <label for="black"></label>
-                <input type="radio" value="BLACK" name="coloroption">
-                <label for="white"></label>
-
-
-
-                <label for="size">Choose the size you prefer:</label>
-
-                <input type="radio" value="WHITE" name="coloroption" id="white" >
-                <label for="white"></label>
-                <input type="radio" value="BLACK" name="coloroption" id="black" >
-                <label for="black"></label>
-                <input type="radio" value="GRAY" name="coloroption" id="gray" >
-                <label for="gray"></label>
-                <input type="radio" value="RED" name="coloroption" id="red" >
-                <label for="red"></label>
-
-                <label for="price">Advance amount:</label>
-                <input type="text" name="contactno" id="price" min="500">
-                
-
-                Full Name: <input type="text" name="customername">
-                Email: <input type="text" name="email">
-                Contact No.: <input type="text" name="contactno">
-
-                <input type="submit" name="submit" value="Checkout!" onsubmit="submitPrice()">
+                <input type="submit" name="submit" value="Checkout!" onsubmit="submitPrice()" class="payButton">
             </form>
         </div>
     </div>
