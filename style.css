@@ -582,6 +582,9 @@ section input {
     color: gray;
     padding: 0px;
 }
+.container{
+  width: 200px;
+}
 
 @media screen and (max-width: 777px) {
   
@@ -833,5 +836,9 @@ section input {
 }
 @media screen and (max-width: 480px) {
   .container {
-    width: 250px;
+    width: 200px;
   }
+  section input {
+    width: 150px;
+}
+}
