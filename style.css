@@ -267,7 +267,7 @@ nav {
 }
 .products {
   height: 100vh;
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
   position: relative;
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 }
@@ -282,10 +282,11 @@ nav {
   left: 0;
   right: 0;
   margin: auto;
-  padding: 10px 40px;    
+  padding: 10px 40px;
   -webkit-box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.91);
   box-shadow: 0px 0px 29px -4px rgba(0, 0, 0, 0.91);
   display: none;
+  border-radius: 20px;
 }
 
 .payTitle {
@@ -313,6 +314,8 @@ label {
   width: 30%;
 } */
 .payButton {
+  border-radius: 35px 0px 35px 0px;
+  border: solid;
   position: absolute;
 
   height: 40px;
@@ -510,7 +513,7 @@ footer {
   background-color: grey;
   color: white;
   margin-top: 30px;
-  
+  border-radius: 10px 10px -35px 35px;
   height: 60vh;
 }
 
@@ -538,10 +541,8 @@ footer {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  
-  
 }
-.radioOption label{
+.radioOption label {
   font-size: 10px;
 }
 
@@ -586,18 +587,20 @@ input {
 section input {
   width: 200px;
 }
-.payment{
-  display: flex;
+.payment {
+  display: none;
 }
 
-.payment form{
+.payment form {
+  color: white;
+  margin-top: 30px;
+  background-color: grey;
   position: absolute;
   margin-left: 40px;
   background: grey;
   width: 60vh;
   height: 60vh;
   margin-top: 80px;
-  
 }
 
 @media screen and (max-width: 480px) {
@@ -631,14 +634,18 @@ section input {
   }
   .sliderPrice {
     top: unset;
-    bottom: -50px;
+    bottom: 0px;
     left: 0;
     background-color: gray;
+    font-size: 30px;
   }
   .buyButton {
-    top: unset;
-    top: 0;
-    right: 0;
+    font-size: 20px;
+    top: 0px;
+    right: 25%;
+
+    margin: 50px;
+    width: 20%;
   }
   .features {
     flex-direction: column;
@@ -690,5 +697,95 @@ section input {
     width: 90%;
     align-items: center;
     background-color: white;
+  }
+  .limitedOffer {
+    top: 20px;
+    left: 150px;
+    position: absolute;
+  }
+  .productDesc {
+    font-size: 15px;
+  }
+  .fIcons {
+    justify-content: center;
+    padding: 40px;
+    position: absolute;
+  }
+  .fButton {
+    position: absolute;
+  }
+  .payment {
+    border-radius: 10px;
+  }
+
+  .payment form {
+    width: 70%;
+    height: 65vh;
+    font-size: 10px;
+    padding: 5px;
+    margin: 0px;
+    
+    flex-direction: row;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .payment label {
+  }
+  .payment input {
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  .products {
+    clip-path: none;
+  }
+
+  .radioOption label {
+    margin-right: 5px;
+  }
+
+  .payment form label {
+    gap: 10px;
+  }
+
+  .fullnameInput,
+  .contactInput,
+  .emailInput,
+  .addressInput,
+  .amountInput,
+  input {
+    width: 120%;
+    height: 20px;
+    border-radius: 5px;
+    margin: 20px 0px;
+  }
+  .payment {
+    top: 30px;
+    height: 82vh;
+  }
+  .payTitle {
+    font-size: 20px;
+    color: gray;
+  }
+  .close {
+    top: -20px;
+    right: -30px;
+  }
+  .radioOption {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+  }
+  .radioOption label {
+    font-size: 10px;
+  }
+
+  .payment form {
+    height: 60vh;
+    top: 60px;
   }
 }
