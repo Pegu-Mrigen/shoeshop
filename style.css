@@ -578,12 +578,9 @@ section input {
 }
 
 .fInput {
-  width: 150px;
+  width: 50px;
 }
 @media screen and (max-width: 480px) {
-  .container {
-    width: 175px;
-  }
   nav {
     padding: 20px;
   }
@@ -776,16 +773,4 @@ section input {
     align-items: center; */
     margin-bottom: 0px;
   }
-  .newSeason {
-    
-    margin-top: 700px;
-}
-.fButton {
-  margin-top: 15;
-  
-}
-
-section input {
-  width: 150px;
-}
 }
