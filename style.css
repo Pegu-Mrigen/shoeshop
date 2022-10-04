@@ -255,7 +255,7 @@ nav {
   height: 100px;
 }
 .products {
-  height: 100vh;
+  height: 100%;
   /* background-color: whitesmoke; */
   position: relative;
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
@@ -582,11 +582,19 @@ section input {
     color: gray;
     padding: 0px;
 }
+.gallery {
+  
+  margin-top: -100px;
+}
 .container{
   width: 200px;
 }
 
 @media screen and (max-width: 777px) {
+  .gallery {
+  
+    margin-top: -200px;
+  }
   
   .fullnameInput, .contactInput, .emailInput, .addressInput, .amountInput, input {
     width: 350px;
@@ -612,6 +620,10 @@ section input {
   }
 }
 @media screen and (max-width: 480px) {
+  .newSeason {
+    margin-top: -150px;
+}
+  
   nav {
     padding: 20px;
   }
@@ -798,7 +810,7 @@ section input {
   }
   
   .products {
-    height: 20px;
+    height: 100%;
   }
   .product {
     /* clip-path: none;
@@ -840,5 +852,8 @@ section input {
   }
   section input {
     width: 150px;
+}
+.newSeason {
+  margin-top: -150px;
 }
 }
