@@ -318,7 +318,7 @@ label {
   height: 20px;
   position: absolute;
   background-color: gray;
-  color: white;
+  color: red;
   top: -50px;
   right: -40px;
   display: flex;
@@ -576,9 +576,37 @@ section input {
   height: 60vh;
   margin-top: 80px;
 }
+@media screen and (max-width: 950px) {
+  .productDesc {
+    font-size: 15px;
+    color: gray;
+    padding: 0px;
+}
 
-.fInput {
-  width: 50px;
+@media screen and (max-width: 777px) {
+  
+  .fullnameInput, .contactInput, .emailInput, .addressInput, .amountInput, input {
+    width: 350px;
+    height: 15px;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+  .payment form {
+    margin: auto;
+    right: 0;
+    left: 0;
+    height: 60vh;
+    top: 60px;
+  }
+  .productDesc {
+    font-size: 15px;
+    padding: 0px;
+    margin: 5px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 0px;
+  }
 }
 @media screen and (max-width: 480px) {
   nav {
@@ -619,7 +647,7 @@ section input {
     font-size: 20px;
     top: 0px;
     right: 25%;
-
+    
     margin: 50px;
     width: 20%;
   }
@@ -631,7 +659,7 @@ section input {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    
     margin-bottom: 0px;
   }
   .productImg {
@@ -699,7 +727,7 @@ section input {
     font-size: 10px;
     padding: 5px;
     margin: 0px;
-
+    
     flex-direction: row;
     margin-top: 20px;
     align-items: center;
@@ -717,16 +745,16 @@ section input {
   .products {
     clip-path: none;
   }
-
+  
   .radioOption label {
     margin-right: 5px;
   }
-
+  
   .payment form label {
     gap: 10px;
   }
-
-  .fullnameInput,
+  
+  fullnameInput,
   .contactInput,
   .emailInput,
   .addressInput,
@@ -757,12 +785,15 @@ section input {
   .radioOption label {
     font-size: 10px;
   }
-
+  
   .payment form {
+    margin: auto;
+    right: 0;
+    left: 0;
     height: 60vh;
     top: 60px;
   }
-
+  
   .products {
     height: 20px;
   }
@@ -773,4 +804,34 @@ section input {
     align-items: center; */
     margin-bottom: 0px;
   }
+  .fInput {
+    width: 150px;
+  }
+  .fButton {
+    margin-top: 10px;
+  }
+  .newSeason {
+    margin-top: 550px;
+  }
+  .fullnameInput,
+  .contactInput,
+  .emailInput,
+  .addressInput,
+  .amountInput,
+  input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 0px 0px;
+  }
+  .payment input {
+    width: 60%;
+  }
+  label {
+    padding-right: 10px;
+  }
 }
+@media screen and (max-width: 480px) {
+  .container {
+    width: 250px;
+  }
