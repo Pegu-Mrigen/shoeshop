@@ -611,9 +611,17 @@ section input {
     height: 600px;
     width: 600px;
   }
+  .newSeason {
+    flex-direction: column;
+  }
 }
 
 @media screen and (max-width: 950px) {
+  .newSeason {
+    flex-direction: column;
+    margin-top: 50px;
+  }
+
   section input {
     width: 150px;
   }
