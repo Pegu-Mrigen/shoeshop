@@ -260,7 +260,7 @@ nav {
   position: relative;
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
   clip-path: none;
-  margin-bottom: 0px;
+  margin-bottom: -100px;
 }
 .payment {
   height: 90%;
@@ -588,7 +588,7 @@ section input {
 }
 @media screen and (max-width: 1024px) {
   .products {
-    margin-bottom: 330px;
+    margin-bottom: 250px;
   }
   
   .fullnameInput,
@@ -604,6 +604,11 @@ section input {
   }
   label {
     padding-right: 20px;
+  }
+  .payment {
+   
+    height: 600px;
+    width: 600px;
   }
 }
 
@@ -628,6 +633,11 @@ section input {
   }
   .products{
     margin-bottom: -100px;
+  }
+  .payment {
+    top: 30px;
+    height: 500px;
+    width: 500px;
   }
 }
 
@@ -680,6 +690,11 @@ section input {
   section input {
     width: 100px;
   }
+  .payment {
+    top: 30px;
+    height: 500px;
+    width: 400px;
+  }
 }
 @media screen and (max-width: 660px) {
   .products {
@@ -704,6 +719,12 @@ section input {
   .gallery{
     display: none;
     margin-top: 30px;
+  }
+
+  .payment {
+    top: 30px;
+    height: 500px;
+    width: 500px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -873,7 +894,8 @@ section input {
   }
   .payment {
     top: 30px;
-    height: 82vh;
+    height: 500px;
+    width: 300px;
   }
   .payTitle {
     font-size: 20px;
@@ -897,7 +919,7 @@ section input {
     right: 0;
     left: 0;
     height: 60%;
-    top: 60px;
+    top: 50px;
   }
 
   .products {
