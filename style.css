@@ -410,6 +410,7 @@ label {
 }
 .newSeason {
   display: flex;
+  margin-top: 200px;
 }
 .nsItem {
   flex: 1;
@@ -633,6 +634,7 @@ section input {
   }
   .products{
     margin-bottom: -100px;
+    z-index: 111;
   }
   .payment {
     top: 30px;
