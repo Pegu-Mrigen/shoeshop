@@ -629,11 +629,16 @@ section input {
 }
 
 @media screen and (max-width: 777px) {
+  .product .p-details h2 {
+    font-size: 10px;
+  }
   .container form input {
     
-    font-size: 10px;}
+    font-size: 10px;
+  }
   .gallery {
     margin-top: -400px;
+    display: none;
   }
 
   .fullnameInput,
@@ -664,7 +669,7 @@ section input {
     margin: 0px;
   }
   .products {
-    margin-bottom: 250px;
+    margin-bottom: -50px;
   }
   .payment {
     width: 80%;
@@ -741,7 +746,7 @@ section input {
     font-size: 30px;
   }
   .buyButton {
-    font-size: 20px;
+    font-size: 15px;
     top: 0px;
     right: 25%;
 
@@ -894,7 +899,7 @@ section input {
 
   .products {
     height: 100%;
-    margin-bottom: 650px;
+    margin-bottom: 450px;
   }
   .product {
     /* clip-path: none;
