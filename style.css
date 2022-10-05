@@ -260,7 +260,7 @@ nav {
   position: relative;
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
   clip-path: none;
-  margin-bottom: -100px;
+  margin-bottom: 0px;
 }
 .payment {
   height: 90%;
@@ -588,7 +588,7 @@ section input {
 }
 @media screen and (max-width: 1024px) {
   .products {
-    margin-bottom: 130px;
+    margin-bottom: 330px;
   }
   
   .fullnameInput,
@@ -902,7 +902,7 @@ section input {
 
   .products {
     height: 100%;
-    margin-bottom: 350px;
+    margin-bottom: 450px;
   }
   .product {
     /* clip-path: none;
