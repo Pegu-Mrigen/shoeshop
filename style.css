@@ -261,8 +261,6 @@ nav {
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
   clip-path: none;
   margin-bottom: -100px;
-
-
 }
 .payment {
   height: 90%;
@@ -489,7 +487,6 @@ footer {
   margin-right: 10px;
 }
 
-
 .fullnameInput {
   display: flex;
   margin: 20px;
@@ -550,7 +547,6 @@ input {
 .addressInput,
 .amountInput,
 input {
-  
   width: 80%;
   height: 20px;
   border-radius: 5px;
@@ -564,11 +560,11 @@ section input {
   display: none;
 }
 
-.payment form { 
+.payment form {
   background-color: grey;
-  position: absolute;  
+  position: absolute;
   background: grey;
-  width: 70%;  
+  width: 70%;
   margin-top: 180px;
   left: 0;
   right: 0;
@@ -589,57 +585,68 @@ section input {
   margin-top: 10px;
   padding: 10px;
   float: left;
-    
-  
 }
 @media screen and (max-width: 1024px) {
-  .products{
+  .products {
     margin-bottom: 130px;
   }
-  .payment form{
-
+  .payment form {
   }
-  .fullnameInput, .contactInput, .emailInput, .addressInput, .amountInput, input {
+  .fullnameInput,
+  .contactInput,
+  .emailInput,
+  .addressInput,
+  .amountInput,
+  input {
     width: 90%;
     height: 25px;
     border-radius: 5px;
     padding: 0px 10px;
+  }
+  label {
+    padding-right: 20px;
+  }
 }
-label{
-  padding-right: 20px;
-}
-}
-
 
 @media screen and (max-width: 950px) {
-  .products{
+  section input {
+    width: 150px;
+  }
+  .products {
     margin-bottom: 130px;
   }
   .productDesc {
     font-size: 15px;
     color: gray;
     padding: 0px;
-}
-.gallery {
-  
-  margin-top: -100px;
-}
-.container{
-  width: 200px;
+  }
+  .gallery {
+    margin-top: -100px;
+  }
+  .container {
+    width: 200px;
+  }
 }
 
 @media screen and (max-width: 777px) {
+  .container form input {
+    
+    font-size: 10px;}
   .gallery {
-  
-    margin-top: -500px;
+    margin-top: -400px;
   }
-  
-  .fullnameInput, .contactInput, .emailInput, .addressInput, .amountInput, input {
+
+  .fullnameInput,
+  .contactInput,
+  .emailInput,
+  .addressInput,
+  .amountInput,
+  input {
     width: 80%;
     height: 15px;
     border-radius: 5px;
     padding: 0px 10px;
-}
+  }
   .payment form {
     margin: auto;
     right: 0;
@@ -656,18 +663,49 @@ label{
     font-size: 20px;
     margin: 0px;
   }
-  .products{
-      margin-bottom: 250px;
+  .products {
+    margin-bottom: 250px;
   }
-.payment{
-  width: 80%;
+  .payment {
+    width: 80%;
+  }
+  section input {
+    width: 100px;
+  }
 }
+@media screen and (max-width: 660px) {
+  .products {
+    margin-bottom: 600px;
+  }
+  .payment {
+    height: 80vh;
+  }
+  .payment from {
+    height: 60vh;
+  }
+  .gallery {
+    display: none;
+  }
+  section input {
+    width: 120px;
+  }
+  .container {
+    width: 200px;
+    margin-left: -30px;
+  }
+  .gallery{
+    display: none;
+    margin-top: 30px;
+  }
 }
 @media screen and (max-width: 480px) {
+  nav {
+    padding: 10px;
+}
   .newSeason {
     margin-top: -450px;
-}
-  
+  }
+
   nav {
     padding: 20px;
   }
@@ -706,7 +744,7 @@ label{
     font-size: 20px;
     top: 0px;
     right: 25%;
-    
+
     margin: 50px;
     width: 20%;
   }
@@ -718,7 +756,7 @@ label{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     margin-bottom: 0px;
   }
   .productImg {
@@ -789,13 +827,13 @@ label{
     font-size: 10px;
     padding: 5px;
     margin: 0px;
-    
+
     flex-direction: row;
     margin-top: 20px;
     align-items: center;
     justify-content: center;
   }
-  
+
   .payment input {
     width: 50%;
     align-items: center;
@@ -804,15 +842,15 @@ label{
     right: 0;
     margin: auto;
   }
-  
+
   .radioOption label {
     margin-right: 5px;
   }
-  
+
   .payment form label {
     gap: 10px;
   }
-  
+
   fullnameInput,
   .contactInput,
   .emailInput,
@@ -845,7 +883,7 @@ label{
   .radioOption label {
     font-size: 10px;
   }
-  
+
   .payment form {
     margin: auto;
     right: 0;
@@ -853,10 +891,10 @@ label{
     height: 60%;
     top: 60px;
   }
-  
+
   .products {
     height: 100%;
-    margin-bottom: 450px;
+    margin-bottom: 650px;
   }
   .product {
     /* clip-path: none;
@@ -871,7 +909,7 @@ label{
   .fButton {
     margin-top: 0px;
   }
-  
+
   .fullnameInput,
   .contactInput,
   .emailInput,
@@ -884,19 +922,30 @@ label{
     margin: 0px 0px;
   }
   .payment input {
-    width: 60%;
+    width: 50%;
   }
   label {
     padding-right: 10px;
   }
+  section input {
+    width: 120px;
+  }
+  .container {
+    width: 200px;
+    margin-left: -30px;
+  }
+  .gallery{
+    display: none;
+    margin-top: 30px;
+  }
 }
+
 @media screen and (max-width: 330px) {
   .container {
     width: 200px;
+    margin-left: -30px;
   }
   section input {
-    width: 150px;
-}
-
-
+    width: 100px;
+  }
 }
