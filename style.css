@@ -260,7 +260,7 @@ nav {
   position: relative;
   clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
   clip-path: none;
-  margin-bottom: 80px;
+  margin-bottom: -100px;
 
 
 }
@@ -578,7 +578,7 @@ section input {
   color: white;
   margin-top: 100px;
   border-radius: 10px 10px -35px 35px;
-  height: 80%;
+  height: 70%;
 }
 
 .copyright {
@@ -592,11 +592,28 @@ section input {
     
   
 }
+@media screen and (max-width: 1024px) {
+  .products{
+    margin-bottom: 130px;
+  }
+  .payment form{
+
+  }
+  .fullnameInput, .contactInput, .emailInput, .addressInput, .amountInput, input {
+    width: 90%;
+    height: 25px;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+label{
+  padding-right: 20px;
+}
+}
 
 
 @media screen and (max-width: 950px) {
   .products{
-    margin-bottom: -30px;
+    margin-bottom: 130px;
   }
   .productDesc {
     font-size: 15px;
@@ -806,6 +823,7 @@ section input {
     height: 40px;
     border-radius: 5px;
     margin: -10px 0px;
+    height: 20px;
   }
   .payment {
     top: 30px;
@@ -838,6 +856,7 @@ section input {
   
   .products {
     height: 100%;
+    margin-bottom: 450px;
   }
   .product {
     /* clip-path: none;
