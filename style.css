@@ -590,8 +590,7 @@ section input {
   .products {
     margin-bottom: 130px;
   }
-  .payment form {
-  }
+  
   .fullnameInput,
   .contactInput,
   .emailInput,
@@ -622,9 +621,13 @@ section input {
   }
   .gallery {
     margin-top: -100px;
+    display: none;
   }
   .container {
     width: 200px;
+  }
+  .products{
+    margin-bottom: -100px;
   }
 }
 
@@ -680,7 +683,7 @@ section input {
 }
 @media screen and (max-width: 660px) {
   .products {
-    margin-bottom: 600px;
+    margin-bottom: 200px;
   }
   .payment {
     height: 80vh;
@@ -899,7 +902,7 @@ section input {
 
   .products {
     height: 100%;
-    margin-bottom: 450px;
+    margin-bottom: 350px;
   }
   .product {
     /* clip-path: none;
